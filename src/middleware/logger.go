@@ -1,10 +1,10 @@
 package middleware
 
 import (
-	"bluesell/src/config"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
+	"oceanus/src/config"
 	"os"
 	"path"
 	"time"

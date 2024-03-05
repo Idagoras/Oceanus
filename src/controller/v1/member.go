@@ -1,9 +1,9 @@
 package v1
 
 import (
-	"bluesell/src/entity"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"oceanus/src/entity"
 )
 
 func AddMember(c *gin.Context) {

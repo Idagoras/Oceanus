@@ -1,10 +1,10 @@
 package common
 
 import (
-	"bluesell/src/errno"
 	"github.com/gin-gonic/gin"
 	"github.com/lib/pq"
 	"net/http"
+	"oceanus/src/errno"
 )
 
 const (

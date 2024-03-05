@@ -1,8 +1,8 @@
 package token
 
 import (
-	"bluesell/src/util"
 	"github.com/stretchr/testify/require"
+	"oceanus/src/util"
 	"testing"
 	"time"
 )

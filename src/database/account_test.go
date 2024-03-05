@@ -1,10 +1,10 @@
 package database
 
 import (
-	"bluesell/src/util"
 	"context"
 	"database/sql"
 	"github.com/stretchr/testify/require"
+	"oceanus/src/util"
 	"testing"
 	"time"
 )

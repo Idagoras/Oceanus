@@ -1,13 +1,13 @@
 package Server
 
 import (
-	"bluesell/src/middleware"
-	"bluesell/src/token"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/require"
 	"net/http"
 	"net/http/httptest"
+	"oceanus/src/middleware"
+	"oceanus/src/token"
 	"testing"
 	"time"
 )

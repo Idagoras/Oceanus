@@ -1,11 +1,11 @@
 package Server
 
 import (
-	config2 "bluesell/src/config"
-	db "bluesell/src/database"
-	"bluesell/src/util"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/require"
+	config2 "oceanus/src/config"
+	db "oceanus/src/database"
+	"oceanus/src/util"
 	"os"
 	"testing"
 	"time"

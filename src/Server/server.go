@@ -1,17 +1,17 @@
 package Server
 
 import (
-	"bluesell/src/config"
-	accountController "bluesell/src/controller/account"
-	userController "bluesell/src/controller/user"
-	db "bluesell/src/database"
-	"bluesell/src/middleware"
-	"bluesell/src/token"
-	valid "bluesell/src/validator/currency"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/validator/v10"
+	"oceanus/src/config"
+	accountController "oceanus/src/controller/account"
+	userController "oceanus/src/controller/user"
+	db "oceanus/src/database"
+	"oceanus/src/middleware"
+	"oceanus/src/token"
+	valid "oceanus/src/validator/currency"
 )
 
 type Server struct {

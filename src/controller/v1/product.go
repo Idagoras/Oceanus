@@ -1,11 +1,11 @@
 package v1
 
 import (
-	"bluesell/src/alarm"
-	"bluesell/src/entity"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"oceanus/src/alarm"
+	"oceanus/src/entity"
 )
 
 func AddProduct(c *gin.Context) {

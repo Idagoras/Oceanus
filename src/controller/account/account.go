@@ -1,15 +1,15 @@
 package accountController
 
 import (
-	"bluesell/src/common"
-	"bluesell/src/database"
-	"bluesell/src/middleware"
-	"bluesell/src/token"
 	"database/sql"
 	"errors"
 	"github.com/gin-gonic/gin"
 	"github.com/lib/pq"
 	"net/http"
+	"oceanus/src/common"
+	"oceanus/src/database"
+	"oceanus/src/middleware"
+	"oceanus/src/token"
 )
 
 type createAccountRequest struct {

@@ -1,12 +1,12 @@
 package main
 
 import (
-	"bluesell/src/Server"
-	"bluesell/src/config"
-	db "bluesell/src/database"
 	"database/sql"
 	_ "github.com/lib/pq"
 	"log"
+	"oceanus/src/Server"
+	"oceanus/src/config"
+	db "oceanus/src/database"
 )
 
 func main() {
@@ -23,7 +23,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err.Error())
 	}
-	err = server.Start(appConfig.ServerAddress + appConfig.Port)
+	err = server.Start(appConfig.HttpServerAddress)
 	if err != nil {
 		log.Fatal("cannot start server")
 	}

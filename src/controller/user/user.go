@@ -1,15 +1,15 @@
 package userController
 
 import (
-	"bluesell/src/common"
-	"bluesell/src/config"
-	"bluesell/src/database"
-	"bluesell/src/token"
 	"database/sql"
 	"errors"
 	"github.com/gin-gonic/gin"
 	"github.com/lib/pq"
 	"net/http"
+	"oceanus/src/common"
+	"oceanus/src/config"
+	"oceanus/src/database"
+	"oceanus/src/token"
 	"time"
 )
 

@@ -1,11 +1,11 @@
 package middleware
 
 import (
-	"bluesell/src/common"
-	"bluesell/src/token"
 	"errors"
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"oceanus/src/common"
+	"oceanus/src/token"
 	"strings"
 )
 

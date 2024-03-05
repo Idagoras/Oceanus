@@ -1,9 +1,9 @@
 package recover
 
 import (
-	"bluesell/src/alarm"
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"oceanus/src/alarm"
 )
 
 func Recover() gin.HandlerFunc {

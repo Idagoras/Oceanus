@@ -1,4 +1,4 @@
-module bluesell
+module oceanus
 
 go 1.21
 

@@ -1,15 +1,15 @@
 package transferController
 
 import (
-	"bluesell/src/common"
-	"bluesell/src/database"
-	"bluesell/src/middleware"
-	"bluesell/src/token"
 	"database/sql"
 	"errors"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"oceanus/src/common"
+	"oceanus/src/database"
+	"oceanus/src/middleware"
+	"oceanus/src/token"
 )
 
 type transferRequest struct {

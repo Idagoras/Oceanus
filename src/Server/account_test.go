@@ -1,11 +1,6 @@
 package Server
 
 import (
-	"bluesell/src/database"
-	mockdb "bluesell/src/database/mock"
-	"bluesell/src/middleware"
-	"bluesell/src/token"
-	"bluesell/src/util"
 	"bytes"
 	"database/sql"
 	"encoding/json"
@@ -15,6 +10,11 @@ import (
 	"io"
 	"net/http"
 	"net/http/httptest"
+	"oceanus/src/database"
+	mockdb "oceanus/src/database/mock"
+	"oceanus/src/middleware"
+	"oceanus/src/token"
+	"oceanus/src/util"
 	"testing"
 	"time"
 )

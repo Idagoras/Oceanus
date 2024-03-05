@@ -1,9 +1,9 @@
 package common
 
 import (
-	"bluesell/src/util"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/crypto/bcrypt"
+	"oceanus/src/util"
 	"testing"
 )
 

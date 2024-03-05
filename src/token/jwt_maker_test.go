@@ -1,10 +1,10 @@
 package token
 
 import (
-	"bluesell/src/util"
 	"errors"
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/stretchr/testify/require"
+	"oceanus/src/util"
 	"testing"
 	"time"
 )
