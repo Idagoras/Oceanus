@@ -7,6 +7,7 @@ import (
 	"github.com/go-playground/validator/v10"
 	"oceanus/src/config"
 	accountController "oceanus/src/controller/account"
+	sessionController "oceanus/src/controller/session"
 	userController "oceanus/src/controller/user"
 	db "oceanus/src/database"
 	"oceanus/src/middleware"
@@ -41,6 +42,7 @@ func (server *Server) initRouter() *Server {
 
 	r.POST("/users/signup", server.createUser)
 	r.POST("/users/login", server.loginUser)
+	r.POST("/tokens/renew_access", server.renewAccessToken)
 
 	authRoutes := r.Group("/").Use(server.authorization)
 	authRoutes.POST("/account/add", server.createAccount)
@@ -84,4 +86,8 @@ func (server *Server) loginUser(ctx *gin.Context) {
 
 func (server *Server) authorization(ctx *gin.Context) {
 	middleware.Authorization(server.tokenMaker)(ctx)
+}
+
+func (server *Server) renewAccessToken(ctx *gin.Context) {
+	sessionController.RenewAccessToken(server.store, ctx, server.tokenMaker, server.config)
 }

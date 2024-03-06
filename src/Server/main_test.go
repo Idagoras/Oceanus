@@ -12,7 +12,7 @@ import (
 )
 
 func newTestServer(t *testing.T, store db.Store) *Server {
-	config := config2.Config{TokenSymmetricKey: util.RandomString(32), AccessTokenDuartion: time.Minute}
+	config := config2.Config{TokenSymmetricKey: util.RandomString(32), AccessTokenDuration: time.Minute}
 	server, err := NewServer(config, store)
 	require.NoError(t, err)
 	return server

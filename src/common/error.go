@@ -28,6 +28,16 @@ func ServerErrorHandle(err error, ctx *gin.Context) {
 	return
 }
 
+func UnauthorizedErrorHandle(err error, ctx *gin.Context) {
+	response := ErrorResponse{
+		Code:    errno.ErrUserAuthorizationMissing.Code(),
+		Message: errno.ErrUserAuthorizationMissing.Message(),
+		Data:    errno.ErrUserAuthorizationMissing.Data(),
+	}
+	ctx.JSON(http.StatusUnauthorized, response)
+	return
+}
+
 func PostgresErrorHandle(err *pq.Error, ctx *gin.Context) {
 	code := err.Code.Name()
 	switch code {

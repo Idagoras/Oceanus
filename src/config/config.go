@@ -18,18 +18,22 @@ const (
 )
 
 type Config struct {
-	Port                string        `mapstructure:"PORT"`
-	AppName             string        `mapstructure:"APP_NAME"`
-	AppSecret           string        `mapstructure:"APP_SECRET"`
-	ApiExpiry           string        `mapstructure:"API_EXPIRY"`
-	LogFilePath         string        `mapstructure:"LOG_FILE_PATH"`
-	LogFileName         string        `mapstructure:"LOG_FILE_NAME"`
-	DBDriver            string        `mapstructure:"DB_DRIVER"`
-	DBSource            string        `mapstructure:"DBSOURCE"`
-	ServerAddress       string        `mapstructure:"SERVER_ADDRESS"`
-	TokenSymmetricKey   string        `mapstructure:"TOKEN_SYMMETRIC_KEY"`
-	AccessTokenDuartion time.Duration `mapstructure:"ACCESS_TOKEN_DURATION"`
-	HttpServerAddress   string        `mapstructure:"HTTP_SERVER_ADDRESS"`
+	Port                 string        `mapstructure:"PORT"`
+	AppName              string        `mapstructure:"APP_NAME"`
+	AppSecret            string        `mapstructure:"APP_SECRET"`
+	ApiExpiry            string        `mapstructure:"API_EXPIRY"`
+	LogFilePath          string        `mapstructure:"LOG_FILE_PATH"`
+	LogFileName          string        `mapstructure:"LOG_FILE_NAME"`
+	DBDriver             string        `mapstructure:"DB_DRIVER"`
+	DBSource             string        `mapstructure:"DB_SOURCE"`
+	ServerAddress        string        `mapstructure:"SERVER_ADDRESS"`
+	TokenSymmetricKey    string        `mapstructure:"TOKEN_SYMMETRIC_KEY"`
+	TokenAsymmetricKey   string        `mapstructure:"TOKEN_ASYMMETRIC_KEY"`
+	AccessTokenDuration  time.Duration `mapstructure:"ACCESS_TOKEN_DURATION"`
+	HttpServerAddress    string        `mapstructure:"HTTP_SERVER_ADDRESS"`
+	GrpcServerAddress    string        `mapstructure:"GRPC_SERVER_ADDRESS"`
+	RefreshTokenDuration time.Duration `mapstructure:"REFRESH_TOKEN_DURATION"`
+	Footer               string        `mapstructure:"FOOTER"`
 }
 
 func LoadConfig(path string) (config Config, err error) {
